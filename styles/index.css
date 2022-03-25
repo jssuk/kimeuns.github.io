@@ -166,7 +166,6 @@ a {
 }
 
 
-
 nav {
   margin-left: auto;
   margin-right: 24px;
@@ -190,6 +189,7 @@ nav {
 }
 
 .top-banner {
+  width: 100%;
   height: 400px;
   background: var(--top-banner-bg);
   color: var(--top-banner-font);
@@ -252,6 +252,10 @@ nav {
   margin: 75px 24px 0px 24px;
 }
 
+#problem-section {
+  margin-bottom: 128px;
+}
+
 #problem-section > .section-title {
   background-color: var(--problem-title-bg);
   color: var(--problem-title-font);
@@ -273,6 +277,10 @@ nav {
 
 #problem-section > .grid-3fr > .card__ > .card__subtitle {
   color: var(--problem-card-subtitle-font);
+}
+
+#solution-section {
+  margin-bottom: 128px;
 }
 
 #solution-section > .section-title {
@@ -322,6 +330,14 @@ nav {
   color: var(--method-card-tag-font);
   background-color: var(--method-card-tag-bg);
 }
+
+#invite-section {
+  margin-top: 152px;
+}
+#invite-section > .section-title__main {
+  margin-bottom: ;
+}
+
 
 .section-title__main {
   font-size: 28px;
@@ -383,8 +399,9 @@ nav {
 /* 상담 버튼 */
 .cta-button__wrapper {
   width: 310px;
-  height: 64px;
+  height: 56px;
   margin: auto;
+  margin-top: 40px;
 }
 
 .cta-button {
