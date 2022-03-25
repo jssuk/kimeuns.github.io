@@ -58,17 +58,17 @@
   /* 카드 설명 색 */
   --section-card-subtitle-font: #737373;
   
-  /* Service */
+  /* problem */
   /* 배경 색 */
-  --service-title-bg: var(--section-title-bg);
+  --problem-title-bg: var(--section-title-bg);
   /* 글자 색 */
-  --service-title-font: var(--section-title-font);
+  --problem-title-font: var(--section-title-font);
   /* 카드 색 */
-  --service-card-bg: var(--section-card-bg);
+  --problem-card-bg: var(--section-card-bg);
   /* 카드 제목 색 */
-  --service-card-title-font: var(--section-card-title-font);
+  --problem-card-title-font: var(--section-card-title-font);
   /* 카드 설명 색 */
-  --service-card-subtitle-font: var(--section-card-subtitle-font);
+  --problem-card-subtitle-font: var(--section-card-subtitle-font);
 
   /* Product */
   /* 배경 색 */
@@ -194,6 +194,7 @@ nav {
   background: var(--top-banner-bg);
   color: var(--top-banner-font);
   display: flex;
+  margin-bottom: 88px;
 }
 
 /* 탑배너 */
@@ -251,78 +252,85 @@ nav {
   margin: 75px 24px 0px 24px;
 }
 
-#service-section > .section-title {
-  background-color: var(--service-title-bg);
-  color: var(--service-title-font);
+#problem-section > .section-title {
+  background-color: var(--problem-title-bg);
+  color: var(--problem-title-font);
+  margin-bottom: 69px;
 }
 
-#service-section > .grid-3fr > .card__ {
-  background-color: var(--service-card-bg);
+#problem-section > .grid-3fr > .card__ {
+  background-color: var(--problem-card-bg);
 }
 
-#service-section > .grid-3fr > .card__ > .card__title {
-  color: var(--service-card-title-font);
+#problem-section > .grid-3fr > .card__ > .card__image {
+  color: var(--problem-card-image);
+  margin-bottom: 24px;
 }
 
-#service-section > .grid-3fr > .card__ > .card__subtitle {
-  color: var(--service-card-subtitle-font);
+#problem-section > .grid-3fr > .card__ > .card__title {
+  color: var(--problem-card-title-font);
 }
 
-#product-section > .section-title {
-  background-color: var(--product-title-bg);
-  color: var(--product-title-font);
+#problem-section > .grid-3fr > .card__ > .card__subtitle {
+  color: var(--problem-card-subtitle-font);
 }
 
-#product-section > .grid-3fr > .card__ {
-  background-color: var(--product-card-bg);
+#solution-section > .section-title {
+  background-color: var(--solution-title-bg);
+  color: var(--solution-title-font);
+  margin-bottom: 26px;
 }
 
-#product-section > .grid-3fr > .card__ > .card__title {
-  color: var(--product-card-title-font);
+#solution-section > .grid-3fr > .card__ {
+  background-color: var(--solution-card-bg);
 }
 
-#product-section > .grid-3fr > .card__ > .card__subtitle {
-  color: var(--product-card-subtitle-font);
+#solution-section > .grid-3fr > .card__ > .card__title {
+  color: var(--solution-card-title-font);
 }
 
-#product-section > .grid-3fr > .card__ > .card__tag {
-  color: var(--product-card-tag-font);
-  background-color: var(--product-card-tag-bg);
+#solution-section > .grid-3fr > .card__ > .card_content {
+  color: var(--solution-card-subtitle-font);
 }
 
 
-#team-section > .section-title {
-  background-color: var(--team-title-bg);
-  color: var(--team-title-font);
+#method-section > .section-title {
+  background-color: var(--method-title-bg);
+  color: var(--method-title-font);
+  margin-bottom: 64px;
 }
 
-#team-section > .grid-4fr > .card__ {
-  background-color: var(--team-card-bg);
+#method-section > .section-title >.section-title__main{
+  background-color: var(--solution-title-bg);
+  color: var(--solution-title-font);
+  margin-bottom: 12px;
 }
 
-#team-section > .grid-4fr > .card__ > .card__title {
-  color: var(--team-card-title-font);
+#method-section > .grid-3fr > .card__ {
+  background-color: var(--method-card-bg);
 }
 
-#team-section > .grid-4fr > .card__ > .card__subtitle {
-  color: var(--team-card-subtitle-font);
+#method-section > .grid-3fr > .card__ > .card__title {
+  color: var(--method-card-title-font);
 }
 
-#team-section > .grid-4fr > .card__ > .card__tag {
-  color: var(--team-card-tag-font);
-  background-color: var(--team-card-tag-bg);
+#method-section > .grid-3fr > .card__ > .card_content {
+  color: var(--method-card-subtitle-font);
+}
+
+#method-section > .grid-3fr > .card__ > .card__tag {
+  color: var(--method-card-tag-font);
+  background-color: var(--method-card-tag-bg);
 }
 
 .section-title__main {
-  font-size: 30px;
-  margin-bottom: 11px;
-  line-height: 37.5px;
+  font-size: 28px;
+  line-height: 41px;
 }
 
 .section-title__sub {
-  font-size: 24px;
-  line-height: 36px;
-  margin-bottom: 60px;
+  font-size: 20px;
+  line-height: 29px;
 }
 
 .grid-3fr {
@@ -339,36 +347,27 @@ nav {
 
 .card__image {
   width: 100%;
-  height: 230px;
+  height: 200px;
   object-fit: contain;
-  border-radius: 4px;
-  margin-bottom: 24px;
+  /* border-radius: 4px; */
+  margin-bottom: 28px;
 }
 
 .card__title {
   font-size: 20px;
-  line-height: 27.5px;
+  line-height: 30px;
   padding: 2px 0px;
-  margin-bottom: 4px;
+  margin-bottom: 14px;
 }
 .card__subtitle {
   font-size: 18px;
   line-height: 25px;
   /* padding: 2px 0px; */
 }
-
-.card__tag {
-  margin-top: 20px;
-  font-family: "Semi-Bold-Pretendard";
-  font-weight: 600;
-  size: 14px;
-  line-height: 21px;
-  color: var(--tag-font);
-  background: var(--tag-bg);
-  width: fit-content;
-  height: 29px;
-  padding: 4px 8px;
-  border-radius: 4px;
+.card_content {
+  font-size: 16px;
+  line-height: 24px;
+  /* padding: 2px 0px; */
 }
 
 /* 프로모션 배너 이미지 */
